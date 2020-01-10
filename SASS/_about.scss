@@ -1,0 +1,112 @@
+.menu-btn {
+
+  //a bar created by span and is 28px wide and white
+  &__burger {
+    background: white;
+    
+
+    //pseudo elements
+    &::before {
+      background: white;
+    }
+
+    &::after {
+      background: white;
+    }
+  }
+}
+
+.frame{
+  height: 100%;
+  background: darken($primary-color, 35%);
+}
+
+.about {
+  padding-bottom: 2rem;
+
+  &__bio-image {
+    height: 50vh;
+    width: 100%;
+
+    //40% of the available view port heights
+    padding-top: 40vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to left, rgba(black, 1.3), rgba(black, 0.3)),
+    //taken from https://unsplash.com/@davidclode
+    url('../img/snake.jpg');
+  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    //the Bio will be stick at the end of the 50% view hight
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    footer {
+      font-size: 1rem;
+      position: fixed;
+      bottom: 0.4rem;
+      right: 1rem;
+      text-align: right;
+      padding: 1rem;
+      color: white;
+  }
+    p {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+
+  }
+
+
+  &__bio {
+    width: 80%;
+    text-align: center;
+
+    .text-secondary {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .CV {
+    width: 60vw;
+    //the last margin parameter shifts it 
+    //from the left side
+    margin: 2rem auto auto auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    &__CV {
+      background: darken($primary-color, 50%);
+      padding: 0.5rem;
+      border-bottom: 5px solid $secondary-color;
+
+      h2,
+      h3 {
+        margin: 0.5rem 0;
+      }
+
+      h6 {
+        margin: 0.3rem 0;
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    transform:
+      rotate(90deg) translate(-3rem, -5rem);
+  }
+
+}

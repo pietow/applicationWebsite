@@ -1,0 +1,31 @@
+.home {
+    height: 100%;
+    //40% of the available view port heights
+    padding-top: 40vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to left, rgba(black, 0.8), rgba(black, 0.3)),
+        url('../img/me.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    //First Name
+    &__name {
+        font-size: 5rem;
+        padding-left: 2rem;
+        margin-top: 1rem;
+        color: whitesmoke;
+        border-bottom: 2px solid whitesmoke;
+
+
+        //last Name
+        &--last {
+            color: $secondary-color;
+            font-weight: 700;
+        }
+
+    }
+
+}

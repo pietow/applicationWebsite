@@ -1,0 +1,67 @@
+$primary-color: #9a9ca2;
+$secondary-color: #ff652f;
+$lower-gradient-color: #1b2229;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//##### Mixin #######
+
+//time is set for all movements, rotations, blinking, and shifting
+@mixin transition-ease {
+    transition: all 1s ease-in-out;
+}
+
+@mixin ring($size) {
+    width: $size;
+    height: $size;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: none;
+}
+
+@mixin delay($objects ,$number, $value) {
+    @for $i from 1 through ($number) {
+        .menu-nav__item:nth-child(#{$i}) {
+        transition-delay: ($i * 0.1s) + $value;
+      }
+    }
+  }
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #000;
+    }
+
+    @else {
+        @return #fff;
+    }
+}
+
+//Responsive:
+
+//media size
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+//large
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+//extra large
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
