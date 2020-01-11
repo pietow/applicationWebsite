@@ -48,14 +48,14 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .social-icons {
-    position: absolute;
-    height: 25vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    z-index: 1;
-    align-items: center;
+  .contact {
+    .social-icons {
+      position: fixed;
+      bottom: 1rem;
+      left: 1rem;
+    }
   }
+
 
   @include media-lg {
     .projects {

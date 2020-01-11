@@ -494,17 +494,10 @@
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .social-icons {
-    position: absolute;
-    height: 25vh;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    z-index: 1;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .contact .social-icons {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
   }
 }
 
