@@ -1,4 +1,5 @@
 @include media-md {
+
   //hamburger is hidden
   .menu-btn {
     visibility: hidden;
@@ -33,9 +34,11 @@
     &__bio-image {
       height: 40vh;
     }
+
     &__items {
       grid-template-columns: repeat(2, 1fr);
     }
+
     .text-secondary {
       font-size: 3rem;
     }
@@ -45,22 +48,30 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .social-icons {
+    position: absolute;
+    height: 25vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 1;
+    align-items: center;
+  }
 
+  @include media-lg {
+    .projects {
+      &__items {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
 
-@include media-lg {
-  .projects {
-    &__items {
+    .contact__list {
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  .contact__list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 
-@include media-xl {
-  .projects__bio-image {
-    height: 50vh;
-  }
+  @include media-xl {
+    .projects__bio-image {
+      height: 50vh;
+    }
   }
 }

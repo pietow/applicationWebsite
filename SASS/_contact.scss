@@ -7,11 +7,10 @@
   align-items: center;
   background: 
     linear-gradient(
-      to right,
-      rgba($primary-color, 0.9),
-      rgba($primary-color, 0.3)
-    ),
-    url('../img/model-1.jpg') center top;
+      to bottom,
+      rgba(darken($primary-color,100%), 1),
+      rgba($primary-color, 0.9)
+    );
   background-size: cover;
 
   h2 {

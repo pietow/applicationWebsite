@@ -1,16 +1,22 @@
+.body-project {
+  background:
+    linear-gradient(to right,
+      rgba(#253c36, 0.4),
+      rgba(#253c36, 0.4)),
+    url('../img/sourceCode.jpg') center; //Photo by Markus Spiske on Unsplash
+}
+
 .projects {
   padding-bottom: 2rem;
 
   &__bio-image {
     height: 30vh;
     width: 100%;
-    background: 
-      linear-gradient(
-        to right,
-        rgba($primary-color, 0.9),
-        rgba($primary-color, 0.3)
-      ),
-      url('../img/model-1.jpg') center top;
+    background:
+      linear-gradient(to right,
+        rgba($primary-color, 0),
+        rgba(#136157, 0.7)),
+      url('../img/sourceCode.jpg') center; //Photo by Markus Spiske on Unsplash
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -37,10 +43,11 @@
     position: relative;
     border-bottom: 5px solid $secondary-color;
     overflow: hidden;
-    cursor: pointer;
+
 
     img {
       width: 100%;
+      //border: solid 5px red;
     }
 
     //overlay with pseudo element
@@ -55,7 +62,7 @@
       height: 100%;
       width: 100%;
       background: $secondary-color;
-      opacity: 0;       
+      opacity: 0;
       @include transition-ease;
     }
 
@@ -66,29 +73,31 @@
       &::after {
         top: 0;
         opacity: 0.8;
+      }
+
+      .projects__btn {
+        opacity: 1;
+      }
+
     }
-.projects__btn{
-  opacity: 1;
-}
-
   }
-}
 
-  &__btns {
+  &__title__btn {
     position: absolute;
-    top: 0;
-    height: 100%;
+    bottom: 8.5vh;
+    height: 50%;
     width: 100%;
     z-index: 1;
     display: grid;
     //repeat twice in a fractional unit
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     align-items: center;
     text-align: center;
   }
 
   &__btn {
     opacity: 0;
+    // border: solid 2px black;
     color: set-text-color($secondary-color);
     @include transition-ease;
 
@@ -97,18 +106,12 @@
     }
 
   }
-  
+
 
   .social-icons {
     display: flex;
     flex-direction: column;
   }
 
-  footer {
-    transform:
-      rotate(90deg)
-      translate(-3rem, -5rem);
-  }
-  
-}
 
+}
