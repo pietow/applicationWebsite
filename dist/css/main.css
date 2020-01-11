@@ -13,11 +13,14 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.3))), url("../img/me.jpg");
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("../img/me.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.3)));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+}
+
+.home__me {
+  position: fixed;
+  border: solid 2px red;
+  height: 0vh;
 }
 
 .home__name {
