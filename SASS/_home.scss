@@ -6,25 +6,54 @@
     align-items: center;
     text-align: center;
     background: linear-gradient(to left, rgba(black, 0.8), rgba(black, 0.3));
-       // url('../img/me.jpg');
+    // url('../img/me.jpg');
     //background-attachment: fixed;
     //background-position: 50% 50%;
     //background-repeat: no-repeat;
     //background-size: contain;
 
-    &__me{
+
+
+    &__wrapper{
         position: fixed;
-        border: solid 2px red;
-        height: 0vh;
+        top: 0;
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        z-index: 0;
+        text-align: left;
+       // padding-left: 2rem;
+        //overflow: scroll;
+
+    .home__me {
+       // position: fixed;
+        height: 25rem;
+        width: 20rem;
+       // top: 0;
+        left: 50%;
+       // margin: auto;
+       // transform: translate(0%, 0%);
+        border: solid 1px whitesmoke;
+        border-top: hidden;
+        border-left: hidden;
+       // z-index: 1;
+        background: linear-gradient(to left, 
+        rgba(black, 0.8), rgba(black, 0.3)),
+         url('../img/me.jpg');
+        background-size: cover;
+        opacity: 1;
     }
 
     //First Name
-    &__name {
-        font-size: 5rem;
-        padding-left: 2rem;
-        margin-top: 1rem;
+    .home__name {
+       // position: fixed;
+        font-size: 300%;
+        margin-top: 0.5rem;
         color: whitesmoke;
+        //z-index: 1;
         border-bottom: 2px solid whitesmoke;
+       // transform: translate(50%);
 
 
         //last Name
@@ -35,4 +64,11 @@
 
     }
 
+
+    h2 {
+        //position: fixed;
+        //z-index: 1;
+        //transform: translate(50%, 30vh);
+    }
+    }
 }

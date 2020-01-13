@@ -35,6 +35,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
+    img {
+      filter: brightness(65%);
+    }
   }
 
   &__item {
