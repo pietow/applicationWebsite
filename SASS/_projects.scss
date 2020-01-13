@@ -94,13 +94,13 @@
     display: grid;
     //repeat twice in a fractional unit
     grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
     align-items: center;
     text-align: center;
   }
 
   &__btn {
     opacity: 0;
-    // border: solid 2px black;
     color: set-text-color($secondary-color);
     @include transition-ease;
 
@@ -109,7 +109,6 @@
     }
 
   }
-
 
   .social-icons {
     display: flex;
