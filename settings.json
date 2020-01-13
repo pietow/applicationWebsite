@@ -1,0 +1,21 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/dist/css"
+        }
+    ],
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.fontSize": 16,
+    "editor.tabSize": 2,
+    "workbench.iconTheme": "vscode-icons",
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "beautify.onSave": true,
+    "editor.formatOnSave": true,
+    "git.confirmSync": false,
+}
