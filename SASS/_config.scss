@@ -18,8 +18,6 @@ $lower-gradient-color: #1b2229;
 @mixin ring($size) {
     width: $size;
     height: $size;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
     border: 2px solid black;
     background: none;
