@@ -222,6 +222,7 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  display: table;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

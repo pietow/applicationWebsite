@@ -42,6 +42,8 @@
     background-size: cover;
 
     //the Bio will be stick at the end of the 50% view hight
+    //Fallback for display: flex
+    display: table;
     display: flex;
     flex-direction: column;
     align-items: center;
