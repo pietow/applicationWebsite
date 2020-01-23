@@ -15,7 +15,7 @@ webp_files = []
 file_pairs = [[re.match(regex, file).string, re.sub(regex,r"\1.webp", file )] \
     for file in files if re.match(regex, file)]
 
-commands = ['cwebp ' + j +' -o ' + w for j, w in file_pairs]    
+commands = ['cwebp -q 80 ' + j +' -o ' + w for j, w in file_pairs]    
 
 def converte(commands):
     for command in commands:
